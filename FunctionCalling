@@ -1,0 +1,23 @@
+package com.intellica;
+
+public class FunctionCalling {
+	public static void main(String[] args) {
+		functionFirst();
+		functionSecond();
+		functionThird();
+	}
+
+	private static int functionThird() {
+		functionSecond();
+		return 0;
+	}
+
+	private static void functionSecond() {
+		functionFirst();
+		functionFirst();
+	}
+
+	private static void functionFirst() {
+		System.out.println("Hello World..!");
+	}
+}

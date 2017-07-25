@@ -9,7 +9,7 @@ public class FactorialWithLooping {
 			Scanner reader = new Scanner(System.in);
 			System.out.print("Faktoriyel Hesaplamak için Sayı Giriniz: ");
 			faktorial = reader.nextInt();
-
+			reader.close();
 			int result = factorialMethod(faktorial);
 			printMethod(result);
 		}

@@ -16,25 +16,23 @@ public class FactorialWithLooping {
 	}
 
 	private static void printMethod(int result) {
-		if (result == -1) {
-			System.out.println("Yanlış Sayı Girdiniz..\n");
-		} else {
-			System.out.println("Faktoriyel Hesaplamasının Sonucu: " + result + "\n");
-		}
+		System.out.println("Faktoriyel Hesaplamasının Sonucu: " + result + "\n");
 	}
 
 	private static int factorialMethod(int facktorialMethodValue) {
-		int numberMethod = facktorialMethodValue;
-		if (numberMethod > 0)
-			for (int i = 1; i < numberMethod; i++) {
-				facktorialMethodValue = facktorialMethodValue * i;
+		int returnValue = 1;
+		if (facktorialMethodValue > 0)
+			for (int i = facktorialMethodValue; i > 0; i--) {
+				returnValue = returnValue * i;
 			}
-		else if (numberMethod == 0) {
-			facktorialMethodValue = 1;
+		else if (facktorialMethodValue == 0) {
+			returnValue = 1;
 		} else {
-			facktorialMethodValue = -1;
+			for (int i = facktorialMethodValue; i < 0; i++) {
+				returnValue = returnValue * i;
+			}
 		}
-		return (facktorialMethodValue);
+		return (returnValue);
 	}
 
 }

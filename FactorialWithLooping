@@ -1,0 +1,40 @@
+package com.intellica;
+
+import java.util.Scanner;
+
+public class FactorialWithLooping {
+	public static void main(String[] args) {
+		while (true) {
+			int faktorial = 0;
+			Scanner reader = new Scanner(System.in);
+			System.out.print("Faktoriyel Hesaplamak için Sayı Giriniz: ");
+			faktorial = reader.nextInt();
+
+			int result = factorialMethod(faktorial);
+			printMethod(result);
+		}
+	}
+
+	private static void printMethod(int result) {
+		if (result == -1) {
+			System.out.println("Yanlış Sayı Girdiniz..\n");
+		} else {
+			System.out.println("Faktoriyel Hesaplamasının Sonucu: " + result + "\n");
+		}
+	}
+
+	private static int factorialMethod(int facktorialMethodValue) {
+		int numberMethod = facktorialMethodValue;
+		if (numberMethod > 0)
+			for (int i = 1; i < numberMethod; i++) {
+				facktorialMethodValue = facktorialMethodValue * i;
+			}
+		else if (numberMethod == 0) {
+			facktorialMethodValue = 1;
+		} else {
+			facktorialMethodValue = -1;
+		}
+		return (facktorialMethodValue);
+	}
+
+}

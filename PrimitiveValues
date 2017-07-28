@@ -13,13 +13,12 @@ public class PrimitiveValues {
 		printMethod(x, y);
 		falseSwap(x, y);
 		moreOperation(x, y);
-		printMethod(x, y);
 	}
 
 	private static void moreOperation(int a, int b) {
 		printMethod(a, b);
 		a = a * b;
-		b=12;
+		b = 12;
 		printMethod(a, b);
 		falseSwap(a, b);
 	}

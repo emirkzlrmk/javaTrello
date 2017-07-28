@@ -1,0 +1,56 @@
+package com.intellica;
+
+public class advancedLooping {
+
+	public static void main(String[] args) {
+		int[] Array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+		sumOfNumbers(Array);
+		System.out.println("Sayıların Toplamı: " + sumOfNumbers(Array) + "\n");
+		
+		addOneToValues(Array);
+		printList(Array);
+		
+		addOneToListMember(Array);
+		printList(Array);
+	}
+
+	private static void addOneToListMember(int[] ArrayMethod) {
+		for (int i = 0; i < ArrayMethod.length; i++) {
+			ArrayMethod[i] = ArrayMethod[i] + 1;
+		}
+
+	}
+
+	private static void addOneToValues(int[] ArrayMethod) {
+		System.out.println("Add to 1");
+		for (int i = 0; i < ArrayMethod.length; i++) {
+			int val = ArrayMethod[i];
+			val = val + 1;
+			System.out.print(val + " ");
+		}
+
+	}
+
+	private static void printList(int[] ArrayMethod) {
+		System.out.println("\n ");
+		System.out.println("Reverse Array: ");
+		for (int i = 0; i < ArrayMethod.length / 2; i++) {
+			int temp = ArrayMethod[i];
+			ArrayMethod[i] = ArrayMethod[ArrayMethod.length - i - 1];
+			ArrayMethod[ArrayMethod.length - i - 1] = temp;
+		}
+		for (int i = 0; i < ArrayMethod.length; i++) {
+			System.out.print(ArrayMethod[i] + " ");
+		}
+
+	}
+
+	private static int sumOfNumbers(int[] ArrayMethod) {
+		int toplam = 0;
+		for (int i : ArrayMethod) {
+			toplam += i;
+		}
+		return toplam;
+	}
+
+}

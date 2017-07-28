@@ -1,0 +1,39 @@
+package com.intellica;
+
+public class PrimitiveValues {
+	static int x;
+	static int y;
+	static int temp;
+	static int a;
+	static int b;
+
+	public static void main(String[] args) {
+		x = 3;
+		y = 2;
+		printMethod(x, y);
+		falseSwap(x, y);
+		moreOperation(x, y);
+		printMethod(x, y);
+	}
+
+	private static void moreOperation(int a, int b) {
+		printMethod(a, b);
+		a = a * b;
+		b=12;
+		printMethod(a, b);
+		falseSwap(a, b);
+	}
+
+	private static void falseSwap(int x, int y) {
+		temp = x;
+		x = y;
+		y = temp;
+		printMethod(x, y);
+
+	}
+
+	private static void printMethod(int x, int y) {
+		System.out.println("X'in degeri; " + x + "\nY'nin Değeri; " + y);
+
+	}
+}

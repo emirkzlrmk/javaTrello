@@ -13,6 +13,7 @@ public class PrimitiveValues {
 		printMethod(x, y);
 		falseSwap(x, y);
 		moreOperation(x, y);
+		printMethod(x, y);
 	}
 
 	private static void moreOperation(int a, int b) {

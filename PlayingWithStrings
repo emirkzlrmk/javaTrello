@@ -1,7 +1,6 @@
 package com.intellica;
 
 public class PlayingWithStrings {
-	static int y = 5;
 
 	public static void main(String[] args) {
 		String s1 = "Computer Science";
@@ -18,10 +17,10 @@ public class PlayingWithStrings {
 		System.out.println(s5);
 
 		x = 3;
-
-		String s6 = "x" + "y" + x + y;
-		String s7 = x + y + "x" + "y";
-		String s8 = "x" + "" + "" + "y" + "" + x + y;
+                y = 2;
+		String s6 = "x" + "y" + "total";
+		String s7 = "total" + "x" + "y";
+		String s8 = "x" + "" + "" + "y" + "" + "total";
 
 		System.out.println(s6);
 		System.out.println(s7);

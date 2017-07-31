@@ -23,6 +23,7 @@ public class BinaryConversion {
 			}
 		} else if (binary == 0) {
 			binaryReturn = "0";
+			System.out.println(binaryReturn);
 			return binaryReturn;
 		} else {
 			while (binary > 0) {

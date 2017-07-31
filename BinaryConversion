@@ -1,0 +1,37 @@
+package com.intellica;
+
+public class BinaryConversion {
+
+	public static void main(String[] args) {
+		int binary = 30;
+
+		toBinary(binary);
+		System.out.println("Binary is " + Integer.toBinaryString(binary));
+	}
+
+	private static String toBinary(int binary) {
+		String binaryReturn = " ";
+		int result;
+
+		if (binary < 0) {
+			binary = binary * -1;
+			System.out.print("-");
+			while (binary > 0) {
+				result = binary % 2;
+				binaryReturn = Integer.toString(result) + binaryReturn;
+				binary = binary / 2;
+			}
+		} else if (binary == 0) {
+			binaryReturn = "0";
+			return binaryReturn;
+		} else {
+			while (binary > 0) {
+				result = binary % 2;
+				binaryReturn = Integer.toString(result) + binaryReturn;
+				binary = binary / 2;
+			}
+		}
+		System.out.println(binaryReturn);
+		return binaryReturn;
+	}
+}

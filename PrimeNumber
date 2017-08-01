@@ -1,0 +1,30 @@
+package com.intellica;
+
+import java.util.Scanner;
+
+public class PrimeNumber {
+	static int prime;
+
+	public static void main(String[] args) {
+		while (true) {
+			System.out.print("Bir sayı giriniz: ");
+			Scanner scn = new Scanner(System.in);
+			prime = scn.nextInt();
+			if (isPrime(prime) == true)
+				System.out.println(prime + " asal sayıdır.\n");
+			else
+				System.out.println(prime + " asal sayı değildir.\n");
+		}
+	}
+
+	private static boolean isPrime(int prime) {
+		for (int i = 2; i < prime; i++) {
+			if (prime % i == 0) {
+				return false;
+
+			}
+		}
+		return true;
+
+	}
+}

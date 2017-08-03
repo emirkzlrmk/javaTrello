@@ -89,3 +89,129 @@ public class SomeArrays {
 		}
 	}
 }
+/**
+1 2 3 4 1 2 3  
+Tuple Indexi: 0
+Degeri: 1
+Tuple Indexi: 3
+Degeri: 4
+ 
+Tuple Indexi: 1
+Degeri: 2
+Tuple Indexi: 2
+Degeri: 3
+ 
+Tuple Indexi: 1
+Degeri: 2
+Tuple Indexi: 6
+Degeri: 3
+ 
+Tuple Indexi: 2
+Degeri: 3
+Tuple Indexi: 1
+Degeri: 2
+ 
+Tuple Indexi: 2
+Degeri: 3
+Tuple Indexi: 5
+Degeri: 2
+ 
+Tuple Indexi: 3
+Degeri: 4
+Tuple Indexi: 0
+Degeri: 1
+ 
+Tuple Indexi: 3
+Degeri: 4
+Tuple Indexi: 4
+Degeri: 1
+ 
+Tuple Indexi: 4
+Degeri: 1
+Tuple Indexi: 3
+Degeri: 4
+ 
+Tuple Indexi: 5
+Degeri: 2
+Tuple Indexi: 2
+Degeri: 3
+ 
+Tuple Indexi: 5
+Degeri: 2
+Tuple Indexi: 6
+Degeri: 3
+ 
+Tuple Indexi: 6
+Degeri: 3
+Tuple Indexi: 1
+Degeri: 2
+ 
+Tuple Indexi: 6
+Degeri: 3
+Tuple Indexi: 5
+Degeri: 2
+ 
+ 
+ 
+ 
+ 
+Find Min Index :0
+1 1 2 2 3 3 4  
+Find Min Index :0
+ 
+1 2 3 4 5 6 7 8 9 10 11  
+Tuple Indexi: 3
+Degeri: 4
+Tuple Indexi: 10
+Degeri: 11
+ 
+Tuple Indexi: 4
+Degeri: 5
+Tuple Indexi: 9
+Degeri: 10
+ 
+Tuple Indexi: 5
+Degeri: 6
+Tuple Indexi: 8
+Degeri: 9
+ 
+Tuple Indexi: 6
+Degeri: 7
+Tuple Indexi: 7
+Degeri: 8
+ 
+Tuple Indexi: 7
+Degeri: 8
+Tuple Indexi: 6
+Degeri: 7
+ 
+Tuple Indexi: 8
+Degeri: 9
+Tuple Indexi: 5
+Degeri: 6
+ 
+Tuple Indexi: 9
+Degeri: 10
+Tuple Indexi: 4
+Degeri: 5
+ 
+Tuple Indexi: 10
+Degeri: 11
+Tuple Indexi: 3
+Degeri: 4
+ 
+ 
+ 
+ 
+ 
+Find Min Index :0
+ 
+1 2 3 4 5 6 7 8 9 10 11  
+Find Min Index :0
+ 
+11 10 9 8 7 6 5 4 3 2 1 0 -1 -2  
+Find Min Index :13
+ 
+-2 -1 0 1 2 3 4 5 6 7 8 9 10 11  
+Find Min Index :0
+*/

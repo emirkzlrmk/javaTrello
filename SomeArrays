@@ -1,0 +1,71 @@
+package com.intellica;
+
+public class SomeArrays {
+
+	public static void main(String[] args) {
+		int[] arr1 = { 1, 2, 3, 4, 1, 2, 3 };
+		int[] arr2 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
+		int[] arr3 = { 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, -1, -2 };
+		printArray(arr1);
+		findTuple(arr1, 5);
+		bubbleSort(arr1);
+		printArray(arr1);
+		System.out.println(" ");
+
+		printArray(arr2);
+		findTuple(arr2, 15);
+		bubbleSort(arr2);
+		System.out.println(" ");
+		printArray(arr2);
+		System.out.println(" ");
+
+		printArray(arr3);
+		System.out.println(" ");
+		bubbleSort(arr3);
+		System.out.println(" ");
+		printArray(arr3);
+	}
+
+	private static void printArray(int[] arr) {
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
+
+		}
+	}
+
+	private static void findTuple(int[] arr, int target) {
+		int arrT = 0;
+		for (int i = 0; i < arr.length; i++) {
+			arrT = arrT + arr[i];
+			if (target == arrT) {
+				System.out.println("Number is Turple: " + target);
+			}
+		}
+	}
+
+	private static int findMin(int[] arr) {
+		int min = arr[0];
+		int minInd = 0;
+		for (int j = 0; j < arr.length; j++) {
+			if (min > arr[j]) {
+				minInd = j;
+			}
+		}
+		return minInd;
+
+	}
+
+	private static void bubbleSort(int arr[]) {
+		int temp;
+
+		for (int i = 1; i < arr.length; i++) {
+			for (int j = 0; j < arr.length - i; j++) {
+				if (arr[j] > arr[j + 1]) {
+					temp = arr[j];
+					arr[j] = arr[j + 1];
+					arr[j + 1] = temp;
+				}
+			}
+		}
+	}
+}

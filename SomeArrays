@@ -39,10 +39,13 @@ public class SomeArrays {
 	}
 
 	private static void findTuple(int[] arr, int target) {
-		for (int i = 0; i < arr.length - 1; i++) {
-			if (target == arr[i + 1] + arr[i]) {
-				System.out.println("Tuple Indexi: " + i + "\nDegeri: " + arr[i]);
-				System.out.println("Tuple Indexi: " + (i + 1) + "\nDegeri: " + arr[i + 1]);
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr.length; j++) {
+				if (target == arr[i] + arr[j]) {
+					System.out.println("Tuple Indexi: " + i + "\nDegeri: " + arr[i]);
+					System.out.println("Tuple Indexi: " + (j) + "\nDegeri: " + arr[j]);
+					System.out.println(" ");
+				}
 			}
 		}
 	}
@@ -72,4 +75,5 @@ public class SomeArrays {
 			}
 		}
 	}
+
 }

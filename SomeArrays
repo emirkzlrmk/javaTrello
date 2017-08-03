@@ -6,25 +6,29 @@ public class SomeArrays {
 		int[] arr1 = { 1, 2, 3, 4, 1, 2, 3 };
 		int[] arr2 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
 		int[] arr3 = { 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, -1, -2 };
-		
 		printArray(arr1);
 		findTuple(arr1, 5);
+		System.out.println("Find Min Index :" + findMin(arr1));
 		bubbleSort(arr1);
 		printArray(arr1);
+		System.out.println("Find Min Index :" + findMin(arr1));
 		System.out.println(" ");
 
 		printArray(arr2);
 		findTuple(arr2, 15);
+		System.out.println("Find Min Index :" + findMin(arr2));
 		bubbleSort(arr2);
 		System.out.println(" ");
 		printArray(arr2);
+		System.out.println("Find Min Index :" + findMin(arr2));
 		System.out.println(" ");
 
 		printArray(arr3);
-		System.out.println(" ");
+		System.out.println("Find Min Index :" + findMin(arr3));
 		bubbleSort(arr3);
 		System.out.println(" ");
 		printArray(arr3);
+		System.out.println("Find Min Index :" + findMin(arr3));
 	}
 
 	private static void printArray(int[] arr) {
@@ -35,11 +39,10 @@ public class SomeArrays {
 	}
 
 	private static void findTuple(int[] arr, int target) {
-		int arrT = 0;
-		for (int i = 0; i < arr.length; i++) {
-			arrT = arrT + arr[i];
-			if (target == arrT) {
-				System.out.println("Number is Turple: " + target);
+		for (int i = 0; i < arr.length - 1; i++) {
+			if (target == arr[i + 1] + arr[i]) {
+				System.out.println("Tuple Indexi: " + i + "\nDegeri: " + arr[i]);
+				System.out.println("Tuple Indexi: " + (i + 1) + "\nDegeri: " + arr[i + 1]);
 			}
 		}
 	}

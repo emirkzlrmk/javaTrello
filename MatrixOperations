@@ -25,7 +25,7 @@ public class MatrixOperations {
 		int rows = arr1.length;
 		int columns = arr1[0].length;
 		int rowcol = arr2[0].length;
-		int[][] result = new int[rows][columns];
+		int[][] result = new int[rows][rowcol];
 		for (int i = 0; i < rows; i++) {
 			for (int j = 0; j < rowcol; j++) {
 				for (int k = 0; k < columns; k++) {
